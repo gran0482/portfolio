@@ -7,20 +7,31 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="styles.css">
 
     <title>Ben Grant - Portfolio</title>
   </head>
   <body>
-    <div class="logo-nav">
-        <img src="/logo/GM-logo.svg" alt="Grante Media Logo">
-        <nav>
-            <ul>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-            </ul>
-        </nav>
-    </div>
+      <!-- Main Navigation of the Website -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <img src="/logo/GM-logo.svg" alt="Grante Media Logo" class="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Photography</a>
+              <a class="nav-link" href="#">Graphic Design</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     <img src="/Images/IMG_3235-3-copy.JPG" alt="picture of helicpoter" class="helicopter-image">
     <img src="/Images/IMG_6883-3-copy.JPG" alt="">
         <h1>Welcome</h1>
@@ -36,12 +47,13 @@
         </lord-icon>
     </button>
     <hr class="hr">
+    <!-- About Me Section of the Website -->
     <Section class="about-me">
         <h1>About Me</h1>
             <img src="/Picture-of-me/Circle.png" alt="">
             <p>Hello everyone, my name is Ben Grant and I am a growing Ottawa photographer and graphic designer. I am still exploring the many sides of photography. I love taking a variety of different pictures, experimenting with the many different sides and I have a growing passion for photography. One side I really want to grow in is portraits and to explore that side to eventually make money. I am excited to share my journey with many of you and see where I take my photography. Come along and enjoy the ride :)</p>
             <p>Down below you can see some examples of my photos that I have taken over the years as well as some graphic design logos that I have made. To view more of my work you can download my portfolio by clicking on the download button.  </p>
-            <button>
+            <button class="download">
                 Download
                 <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
                 <lord-icon
@@ -53,30 +65,111 @@
                 <a href="/portfolio/Portfolio-Ben-Grant-copy.pdf"></a>
             </button>
     </Section>
-    <hr>
+    <!-- photography and graphic design section -->
+    <hr class="hr">
     <section class="photo-graphic">
         <h1>Photography</h1>
         <div class="images">
-            <img src="/Images/IMG_4887-copy.jpg" alt="">
+            <img src="/Images/IMG_4887-copy.jpg"  alt="...">
         </div>
-            <img src="/Images/IMG_7297-copy.jpg" alt="">
-
-        <h1>Graphic Design</h1>
         <div class="images">
-
+            <img src="/Images/IMG_7297-copy.jpg" alt="">
         </div>
+        <div class="images">
+            <img src="/Images/2_Grant_B-copy.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="/Images/IMG_6745-2-copy.JPG" alt="">
+        </div>
+        <div class="images">
+            
+        </div>
+        <div class="images">
+            <img src="/Images/IMG_6795-Edit-copy.JPG" alt="">
+        </div>
+        <h1>Graphic Design</h1>
+        <div class="card" style="width: 18rem;">
+            <img src="/GraphicDesign/Tiger-side-profile-copy-4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Sports Logo</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/GraphicDesign/square-branding-logo-03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Branding Logo</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/GraphicDesign/Avatar-Icon-large-copy-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">App design</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/GraphicDesign/Self-logo-copy-01-copy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Self logo</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/GraphicDesign/Ottawa-Art-02-copy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Location Sticker</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/GraphicDesign/Timmy-turner-2-copy-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Catoon Character Reaction</p>
+            </div>
+          </div>
     </section>
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <hr class="hr">
+    <!-- Contact Section -->
+    <h2>Lets Do This!</h2>
+    <div class="contact-grid">
+      <div class="mb-2">
+        <label for="formGroupExampleInput" class="form-label">First Name</label>
+        <input type="text" class="form-control first-name" id="formGroupExampleInput" placeholder="First name">
+      </div>
+      <div class="mb-2">
+        <label for="formGroupExampleInput2" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Last name">
+      </div>
+      <div class="mb-2">
+        <label for="formGroupExampleInput3" class="form-label">Email</label>
+        <input type="email" class="form-control email" id="formGroupExampleInput3" placeholder="Email">
+      </div>
+      <div class="mb-2">
+        <label for="formGroupExampleInput4" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="formGroupExampleInput4" placeholder="Phone Number">
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput5" class="form-label">Subject</label>
+      <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Subject">
+    </div>
+    <textarea class="text-area" name="textarea">Put your message here</textarea>
+    <button class="Submit">
+        Submit
+     <lord-icon
+        src="https://cdn.lordicon.com/vixtkkbk.json"
+        trigger="loop-on-hover"
+        colors="primary:#121331,secondary:#ffffff"
+        style="width:75px;height:75px">
+     </lord-icon>
+    </button>
+    <hr class="hr">
+    <div class="copyright">
+      &copy Grant Media
+    </div>
+      <div class="footer-nav">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Photography</a>
+        <a class="nav-link" href="#">Graphic Design</a>
+        <a class="nav-link" href="#">Contact</a>
+      </div>
   </body>
 </html>
